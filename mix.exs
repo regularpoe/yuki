@@ -19,6 +19,8 @@ defmodule Yuki.MixProject do
 
   defp deps do
     [
+      {:cowboy, "~> 2.12"},
+      {:plug_cowboy, "~> 2.7"}
     ]
   end
 end
