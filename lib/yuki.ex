@@ -1,0 +1,2 @@
+defmodule Yuki do
+end
