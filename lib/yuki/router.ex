@@ -10,7 +10,8 @@ defmodule Yuki.Router do
   end
 
   match _ do
-    rsp(conn, 404, "Not found")
+    error_response = %{"error" => "Not found"}
+    rsp(conn, 404, Jason.encode!(error_response))
   end
 
   defp rsp(conn, status, body) do
